@@ -12,6 +12,16 @@
   --color-secondary-1-4: #615916;
 }
 
+p, a {
+    font-family: "Open Sans";
+    font-size: 20px;
+}
+
+
+h1, h2, h3, h4, h5, h6, li, div {
+  font-family: "Open Sans";
+}
+
 .page {
   width: 100%;
   display: flex;
@@ -154,6 +164,17 @@
   align-items: center;
 }
 
+.ul-about {
+  color: white;
+  line-height: 2;
+}
+
+.p-about {
+  margin: 20px;
+  color: white;
+  line-height: 2;
+}
+
 /* End About page styling */
 
 /*Start Home page styling */
@@ -168,6 +189,17 @@
 #home-img {
     width: 30%;
 }
+
+#home-title {
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.home-paragraph {
+    width: 650px;
+}
+
+/* End home page styling */
 
 .footer {
   background-color: var(--color-primary-0);
