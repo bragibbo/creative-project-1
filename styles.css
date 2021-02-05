@@ -182,6 +182,7 @@ h1, h2, h3, h4, h5, h6, li, div {
     display: flex;
     background-color: white;
     align-items: center;
+    text-align: center;
     width: 100%;
     
 }
@@ -191,13 +192,13 @@ h1, h2, h3, h4, h5, h6, li, div {
 }
 
 #home-title {
-    font-size: 75px;
+    font-size: 4.5em;
     font-weight: 600;
     margin-bottom: 50px;
 }
 
 .home-paragraph {
-    width: 650px;
+    width: 70%;
 }
 
 .masonry { /* Masonry container */
@@ -234,6 +235,10 @@ html {
     background: #eee;
     padding: .5em;
     margin: 0 0 1.5em;
+  }
+
+  #last-paragraph {
+      margin-bottom: 50px;
   }
 
 /* End home page styling */
@@ -318,6 +323,11 @@ html {
 
   .footer {
     justify-content: center;
+  }
+
+  #home-title {
+      font-size: 2em;
+
   }
 }
 
