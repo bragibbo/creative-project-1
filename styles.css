@@ -193,11 +193,48 @@ h1, h2, h3, h4, h5, h6, li, div {
 #home-title {
     font-size: 75px;
     font-weight: 600;
+    margin-bottom: 50px;
 }
 
 .home-paragraph {
     width: 650px;
 }
+
+.masonry { /* Masonry container */
+    column-count: 4;
+    column-gap: 1em;
+  }
+  
+
+
+
+.masonry-img {
+    width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* The Masonry Container */
+  .masonry {
+    margin: 1.5em auto;
+    max-width: 768px;
+    column-gap: 1em;
+  }
+  
+  /* The Masonry Brick */
+  .item {
+    background: #eee;
+    padding: .5em;
+    margin: 0 0 1.5em;
+  }
 
 /* End home page styling */
 
