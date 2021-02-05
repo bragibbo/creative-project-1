@@ -93,32 +93,30 @@
     color: white;
 }
 
+/* End Blog page styling */
+
 /* Start Product page styling */
 
 .h1-heading {
   color: white;
-  margin: 25px;
 }
 
 .h3-sub {
   color: white;
-  margin: 25px;
   font-style: italic;
 }
 
 .h4-section {
   color: white;
-  margin: 25px;
 } 
 
 .products {
-  margin-bottom: 100px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .product {
-  margin: 5px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -129,18 +127,15 @@
 }
 
 .product-img {
-  margin-right: 10px;
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   border: 10px solid var(--color-secondary-1-2);
 }
 
 .btn-buy-now {
-  margin-left: 10px;
-  margin-top: 10px;
   text-decoration: none;
   height: 50px;
-  width: 200px;
+  width: 100px;
   color: white;
   border-radius: 5px;
   background-color: var(--color-secondary-1-0);
@@ -151,8 +146,54 @@
 
 /* End Product page styling */
 
+/* Start of About page styling */
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End About page styling */
+
+/*Start Home page styling */
+.home-page {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#home-img {
+    width: 30%;
+}
+
+.footer {
+  background-color: var(--color-primary-0);
+  color: black;
+  height: 75px;
+  order: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.github-link {
+  border: 1px solid var(--color-secondary-1-0);
+  background-color: var(--color-secondary-1-0);
+  padding: 7px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
+  .page {
+    width: 100%;
+  }
+  
   .product {
     flex-direction: column;
   }
@@ -163,24 +204,83 @@
   .image-box-reverse {
       flex-direction: column-reverse;
   }
+  #blog-text-left {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #blog-text-right {
+      margin-right: 20px;
+      margin-left: 20px;
+  }
+
+  .blog-image {
+      border: 10px solid var(--color-secondary-1-2);
+  }
+
+  .products {
+    margin-bottom: 100px;
+  }
+
+  .product {
+    margin: 5px;
+  }
+
+  .h4-section {
+    margin: 20px;
+  }
+
+  .h3-sub {
+    margin: 20px;
+  }
+
+  .h1-heading {
+    margin: 20px;
+  }
+
+  .product-img {
+    margin-right: 10px;
+  }
+
+  .btn-buy-now {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .footer {
+    justify-content: center;
+  }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .image-box {
-        flex-direction: column;
-    }
-    .image-box-reverse {
-        flex-direction: column-reverse;
-    }
-    #blog-text-left {
-        margin-left:0
-    }
-    
-    #blog-text-right {
-        margin-right: 
-    }
+  .page {
+    width: 100%;
+  }
 
+  .product {
+    flex-direction: column;
+  }
+
+  .image-box {
+      flex-direction: column;
+  }
+  .image-box-reverse {
+      flex-direction: column-reverse;
+  }
+  #blog-text-left {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+  
+  #blog-text-right {
+      margin-right: 20px;
+      margin-left: 20px;
+  }
+
+  .footer {
+    justify-content: center;
+  }
 }
 
 /* Desktop Styles */
@@ -191,5 +291,39 @@
 
   .product-text {
     width: 500px;
+  }
+
+  .products {
+    margin-bottom: 100px;
+    margin: 10px;
+  }
+
+  .product {
+    margin: 5px;
+  }
+
+  .h4-section {
+    margin: 20px;
+  }
+
+  .h3-sub {
+    margin: 20px;
+  }
+
+  .h1-heading {
+    margin: 20px;
+  }
+
+  .product-img {
+    margin-right: 10px;
+  }
+
+  .btn-buy-now {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .github-link {
+    margin-right: 20px;
   }
 }
